@@ -1,10 +1,4 @@
-/* =========================================================
-   DESIGN TOKENS
-   A "detection HUD" visual language — ties back to the
-   computer-vision project (PlateGuard) that anchors this
-   portfolio. Corner brackets = bounding boxes. Mono labels =
-   detection tags. Everything else stays quiet around it.
-   ========================================================= */
+
 :root {
   --bg: #0a0e14;
   --surface: #11161f;
@@ -16,9 +10,9 @@
   --text-muted: #8a93a3;
   --text-dim: #5b6472;
 
-  --accent: #4dd9c4;       /* cyan — primary bracket / link color */
+  --accent: #4dd9c4;      
   --accent-soft: rgba(77, 217, 196, 0.12);
-  --accent-amber: #f5a623; /* amber — secondary highlight */
+  --accent-amber: #f5a623;
   --accent-amber-soft: rgba(245, 166, 35, 0.12);
 
   --font-display: 'Space Grotesk', sans-serif;
@@ -32,9 +26,9 @@
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* =========================================================
+/* 
    RESET
-   ========================================================= */
+   */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
@@ -69,9 +63,9 @@ input, textarea { font-family: inherit; font-size: 1rem; }
 
 .mono { font-family: var(--font-mono); }
 
-/* =========================================================
+/* 
    SCAN-LINE BACKGROUND
-   ========================================================= */
+    */
 .scan-bg {
   position: fixed;
   inset: 0;
@@ -83,9 +77,9 @@ input, textarea { font-family: inherit; font-size: 1rem; }
     repeating-linear-gradient(0deg, rgba(255,255,255,0.018) 0px, rgba(255,255,255,0.018) 1px, transparent 1px, transparent 3px);
 }
 
-/* =========================================================
+/* 
    BRACKET FRAME — signature component
-   ========================================================= */
+   */
 .bracket-frame {
   position: relative;
   border: 1px solid var(--border);
@@ -109,9 +103,9 @@ input, textarea { font-family: inherit; font-size: 1rem; }
 
 .bracket-frame:hover .corner { width: 22px; height: 22px; }
 
-/* =========================================================
+/*
    BUTTONS
-   ========================================================= */
+    */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -139,9 +133,9 @@ input, textarea { font-family: inherit; font-size: 1rem; }
 
 .btn-small { padding: 9px 18px; font-size: 0.85rem; }
 
-/* =========================================================
+/* 
    NAVBAR
-   ========================================================= */
+   */
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -212,9 +206,9 @@ input, textarea { font-family: inherit; font-size: 1rem; }
 .nav-toggle.is-open span:nth-child(2) { opacity: 0; }
 .nav-toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* =========================================================
+/* 
    HERO
-   ========================================================= */
+  */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -336,9 +330,9 @@ input, textarea { font-family: inherit; font-size: 1rem; }
 }
 @keyframes scrollPulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
 
-/* =========================================================
+/* 
    SECTIONS — shared
-   ========================================================= */
+   */
 .section { padding: 110px 0; }
 .section-alt { background: var(--surface); }
 
@@ -360,9 +354,9 @@ input, textarea { font-family: inherit; font-size: 1rem; }
   margin-bottom: 48px;
 }
 
-/* =========================================================
+/* 
    ABOUT
-   ========================================================= */
+   */
 .about-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
@@ -387,9 +381,9 @@ input, textarea { font-family: inherit; font-size: 1rem; }
 .stat-unit { font-size: 1rem; color: var(--text-dim); }
 .stat-label { color: var(--text-muted); font-size: 0.85rem; margin-top: 6px; }
 
-/* =========================================================
+/*
    SKILLS
-   ========================================================= */
+   */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -404,9 +398,9 @@ input, textarea { font-family: inherit; font-size: 1rem; }
 }
 .skill-list li:last-child { border-bottom: none; }
 
-/* =========================================================
+/* 
    PROJECTS
-   ========================================================= */
+  */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -467,9 +461,9 @@ input, textarea { font-family: inherit; font-size: 1rem; }
 .project-card-more { justify-content: center; border-style: dashed; }
 .project-card-more .detect-tag { color: var(--text-dim); }
 
-/* =========================================================
+/* 
    TIMELINE
-   ========================================================= */
+   */
 .timeline {
   position: relative;
   padding-left: 32px;
@@ -492,9 +486,9 @@ input, textarea { font-family: inherit; font-size: 1rem; }
 .timeline-org { color: var(--text-dim); font-size: 0.85rem; margin-bottom: 12px; }
 .timeline-desc { color: var(--text-muted); font-size: 0.92rem; }
 
-/* =========================================================
+/*
    CONTACT
-   ========================================================= */
+    */
 .contact-grid {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -549,9 +543,9 @@ input, textarea { font-family: inherit; font-size: 1rem; }
 }
 .form-success.is-visible { display: block; }
 
-/* =========================================================
+/* 
    FOOTER
-   ========================================================= */
+   */
 .footer { border-top: 1px solid var(--border-soft); padding: 28px 0; }
 .footer-inner {
   display: flex;
@@ -571,12 +565,7 @@ input, textarea { font-family: inherit; font-size: 1rem; }
 }
 .back-to-top:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-3px); }
 
-/* =========================================================
-   SCROLL REVEAL (JS toggles .is-visible)
-   Content is visible by default. JS adds .reveal-init the
-   moment it runs — only then does this hide-then-reveal
-   animation apply. If JS never loads, nothing stays hidden.
-   ========================================================= */
+
 [data-reveal].reveal-init {
   opacity: 0;
   transform: translateY(18px);
@@ -589,7 +578,7 @@ input, textarea { font-family: inherit; font-size: 1rem; }
   .corner, .confidence-fill, .scroll-line, .cursor { transition: none; animation: none; }
 }
 
-/* =========================================================
+/* 
    RESPONSIVE — TABLET */
 @media (max-width: 1024px) {
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -606,10 +595,11 @@ input, textarea { font-family: inherit; font-size: 1rem; }
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
-/* =========================================================
+/*
    RESPONSIVE — MOBILE
-   ========================================================= */
+   */
 @media (max-width: 720px) {
   .section { padding: 76px 0; }
 
