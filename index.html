@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noor — Software Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Noor — Full-stack developer transitioning into Python, building computer vision and web projects." />
+
+  <!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (data/labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== SCAN-LINE BACKGROUND (decorative, fixed) ===================== -->
+  <div class="scan-bg" aria-hidden="true"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket"></span>NOOR FATIMA<span class="logo-bracket"></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-small nav-cta">Hire Me</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== 1. HOME / LANDING (HERO) ===================== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-content" data-reveal>
+          
+
+          <div class="bracket-frame hero-bracket">
+            <span class="corner tl"></span><span class="corner tr"></span>
+            <span class="corner bl"></span><span class="corner br"></span>
+            <img src="image/portfolio.jpg" alt="My Picture" class="profile-img">
+            <h1 class="hero-title">
+              Hi, I'm <span class="text-accent">Noor</span>.<br />
+              I build things with <span class="typed-role">code</span><span class="cursor">|</span>
+            </h1>
+          </div>
+
+          <p class="hero-text">
+            A 6th-semester Computer Science student in Lahore College for Women University, focused on full-stack development
+across MERN, Laravel, and Python/FastAPI — building practical, real-world software
+end-to-end, from e-commerce platforms to computer-vision APIs.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" data-reveal>
+          <div class="bracket-frame detect-card">
+            <span class="corner tl"></span><span class="corner tr"></span>
+            <span class="corner bl"></span><span class="corner br"></span>
+            <p class="detect-tag mono">DEVELOPER_PROFILE</p>
+
+            <div class="detect-row">
+              <span class="detect-label mono">STATUS</span>
+              <span class="detect-value status-dot">Open to Internships</span>
+            </div>
+            <div class="detect-row">
+              <span class="detect-label mono">LOCATION</span>
+              <span class="detect-value">Lahore, Pakistan</span>
+            </div>
+           <div class="detect-row">
+  <span class="detect-label mono">FOCUS</span>
+  <span class="detect-value">Full-Stack Development</span>
+</div>
+<div class="detect-row">
+  <span class="detect-label mono">STACK</span>
+  <span class="detect-value">MERN · Laravel · Python/FastAPI</span>
+</div>
+            <div class="confidence-bar">
+              <div class="confidence-fill" style="--fill:92%"></div>
+            </div>
+            <p class="detect-tag mono confidence-label">MATCH CONFIDENCE — 92%</p>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span class="mono">SCROLL</span>
+        <span class="scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ===================== 2. ABOUT ME ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-tag mono">ABOUT</p>
+        <h2 class="section-title">Who I Am</h2>
+
+        <div class="about-grid">
+          <div class="about-text" data-reveal>
+            <p>
+              I'm a Computer Science student at Lahore College for Women University, currently in my 6th
+              semester and actively completing the internship requirement for my degree. My core
+              focus is full-stack development — I've built projects across MERN, Laravel, and
+              Python/FastAPI, and picked up tools like OpenCV and EasyOCR along the way to extend
+              that foundation into computer vision.
+            </p>
+            <p>
+              I learn best by building real things end-to-end: designing the database, wiring up
+              the backend logic, debugging the inevitable edge cases, and shipping something that
+              actually works. 
+            </p>
+            <p>
+              Right now, I'm looking for an onsite full-stack development position in Lahore where I can keep
+              learning fast, contribute from day one, and close the gap between "it works on my
+              machine" and production-quality code.
+            </p>
+          </div>
+
+          <div class="about-stats" data-reveal>
+            <div class="stat-card">
+              <p class="stat-number mono">6<span class="stat-unit">th</span></p>
+              <p class="stat-label">Semester, BS Computer Science</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number mono">2</p>
+              <p class="stat-label">Major projects shipped end-to-end</p>
+            </div>
+            <div class="stat-card">
+  <p class="stat-number mono">3</p>
+  <p class="stat-label">Stacks: MERN, Laravel, Python</p>
+</div>
+            <div class="stat-card">
+              <p class="stat-number mono">LHR</p>
+              <p class="stat-label">Based in Lahore, Pakistan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. SKILLS & TECHNOLOGIES ===================== -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <p class="section-tag mono">SKILLS</p>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+        <p class="section-sub">
+          Grouped by where they show up in my projects — not by how long I've used them.
+        </p>
+
+        <div class="skills-grid">
+
+          <div class="skill-category bracket-frame" data-reveal>
+            <span class="corner tl"></span><span class="corner tr"></span>
+            <span class="corner bl"></span><span class="corner br"></span>
+            <p class="skill-tag mono">CATEGORY · LANGUAGES</p>
+            <ul class="skill-list">
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>HTML5 &amp; CSS3</li>
+            </ul>
+          </div>
+
+          <div class="skill-category bracket-frame" data-reveal>
+            <span class="corner tl"></span><span class="corner tr"></span>
+            <span class="corner bl"></span><span class="corner br"></span>
+            <p class="skill-tag mono">CATEGORY · BACKEND</p>
+            <ul class="skill-list">
+              <li>FastAPI</li>
+              <li>Node.js &amp; Express</li>
+              <li>Laravel</li>
+              <li>REST API Design</li>
+            </ul>
+          </div>
+
+          <div class="skill-category bracket-frame" data-reveal>
+            <span class="corner tl"></span><span class="corner tr"></span>
+            <span class="corner bl"></span><span class="corner br"></span>
+            <p class="skill-tag mono">CATEGORY · FRONTEND</p>
+            <ul class="skill-list">
+              <li>React</li>
+              <li>Bootstrap 5</li>
+              <li>Responsive UI</li>
+              <li>Blade Templates</li>
+            </ul>
+          </div>
+
+          <div class="skill-category bracket-frame" data-reveal>
+            <span class="corner tl"></span><span class="corner tr"></span>
+            <span class="corner bl"></span><span class="corner br"></span>
+            <p class="skill-tag mono">CATEGORY · DATA</p>
+            <ul class="skill-list">
+              <li>MongoDB &amp; Atlas</li>
+              <li>MySQL</li>
+              <li>Motor (async)</li>
+              <li>Eloquent ORM</li>
+            </ul>
+          </div>
+
+          <div class="skill-category bracket-frame" data-reveal>
+            <span class="corner tl"></span><span class="corner tr"></span>
+            <span class="corner bl"></span><span class="corner br"></span>
+            <p class="skill-tag mono">CATEGORY · COMPUTER VISION</p>
+            <ul class="skill-list">
+              <li>OpenCV</li>
+              <li>EasyOCR</li>
+              <li>Haar Cascades</li>
+              <li>Image Preprocessing</li>
+            </ul>
+          </div>
+
+          <div class="skill-category bracket-frame" data-reveal>
+            <span class="corner tl"></span><span class="corner tr"></span>
+            <span class="corner bl"></span><span class="corner br"></span>
+            <p class="skill-tag mono">CATEGORY · TOOLING</p>
+            <ul class="skill-list">
+              <li>Git &amp; GitHub</li>
+              <li>Postman</li>
+              <li>XAMPP</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. PROJECTS SHOWCASE ===================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-tag mono">PROJECTS</p>
+        <h2 class="section-title">Things I've Built</h2>
+        <p class="section-sub">Two projects I built end-to-end, plus more on GitHub.</p>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: blog system-->
+          <article class="project-card bracket-frame" data-reveal>
+            <span class="corner tl"></span><span class="corner tr"></span>
+            <span class="corner bl"></span><span class="corner br"></span>
+
+            <p class="detect-tag mono">FULL_STACK_API</p>
+<h3 class="project-title">Blog System</h3>
+<p class="project-desc">
+  A full-stack blog management system built using FastAPI and MongoDB, designed to handle
+  dynamic content creation, storage, and retrieval efficiently. It allows users to create,
+  update, delete, and view blog posts through RESTful APIs with secure and scalable backend architecture.
+</p>
+
+<ul class="project-points">
+  <li><span class="mono point-tag">ENDPOINT</span> POST /api/posts · GET /api/posts · PUT /api/posts/{id} · DELETE /api/posts/{id}</li>
+  <li><span class="mono point-tag">FEATURES</span> CRUD operations, structured API design, and MongoDB data persistence</li>
+  <li><span class="mono point-tag">BACKEND</span> FastAPI with async request handling and clean architecture</li>
+</ul>
+
+<div class="project-stack">
+  <span class="tag">FastAPI</span><span class="tag">Python</span>
+  <span class="tag">MongoDB</span><span class="tag">Motor</span><span class="tag">REST API</span>
+</div>
+
+          </article>
+
+          <!-- Project 2: myweb -->
+          <article class="project-card bracket-frame" data-reveal>
+            <span class="corner tl"></span><span class="corner tr"></span>
+            <span class="corner bl"></span><span class="corner br"></span>
+
+            <p class="detect-tag mono">ECOMMERCE_PLATFORM</p>
+            <h3 class="project-title">myweb</h3>
+            <p class="project-desc">
+              A Daraz-style e-commerce platform built in Laravel for a university group project.
+              My scope was the data layer: designing the schema, writing the migrations, and
+              wiring up the model relationships that the rest of the app depended on.
+            </p>
+            <ul class="project-points">
+              <li><span class="mono point-tag">SCHEMA</span> Categories, products, orders, cart — 4 core tables</li>
+              <li><span class="mono point-tag">RELATIONS</span> hasMany / belongsTo across Eloquent models</li>
+              <li><span class="mono point-tag">FIXED</span> Migration order, foreign keys, stock-decrement logic</li>
+            </ul>
+            <div class="project-stack">
+              <span class="tag">Laravel</span><span class="tag">PHP</span>
+              <span class="tag">MySQL</span><span class="tag">Bootstrap 5</span><span class="tag">Eloquent</span>
+            </div>
+          
+          </article>
+
+          <!-- Project: ShopNest -->
+<article class="project-card bracket-frame" data-reveal>
+  <span class="corner tl"></span><span class="corner tr"></span>
+  <span class="corner bl"></span><span class="corner br"></span>
+
+  <p class="detect-tag mono">ECOMMERCE_PLATFORM</p>
+  <h3 class="project-title">ShopNest</h3>
+  <p class="project-desc">
+    A full-stack MERN e-commerce platform designed to simulate a modern online shopping experience.
+    Built with a focus on scalable architecture, it supports product browsing, cart management,
+    and order handling with a RESTful backend and dynamic React frontend.
+  </p>
+
+  <ul class="project-points">
+    <li><span class="mono point-tag">SCHEMA</span> Users, products, cart, orders — structured MongoDB collections</li>
+    <li><span class="mono point-tag">FEATURES</span> Product listing, cart system, order flow, and state management</li>
+    <li><span class="mono point-tag">BACKEND</span> Express.js REST APIs with MongoDB data handling</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="tag">MongoDB</span><span class="tag">Express.js</span>
+    <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">REST API</span>
+  </div>
+
+</article>
+
+          
+
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- ===================== 5. EDUCATION / EXPERIENCE ===================== -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <p class="section-tag mono">04 / TIMELINE</p>
+        <h2 class="section-title">Education &amp; Experience</h2>
+
+        <p class="subsection-title mono">EDUCATION</p>
+        <div class="bracket-frame education-card" data-reveal>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          
+          <h3 class="timeline-title">BS Computer Science</h3>
+          <p class="timeline-org">Lahore College for Women University · Lahore, Pakistan</p>
+          <p class="timeline-desc">
+            A Computer Science student at Lahore College for Women University with hands-on experience in web development,
+             problem-solving, and building real-world software projects using modern technologies.
+          </p>
+          <div class="detect-row">
+            <span class="detect-label mono">SESSION</span>
+            <span class="detect-value">[Fall 2023 – Fall 2027]</span>
+          </div>
+          <div class="detect-row">
+            <span class="detect-label mono">CURRENT CGPA</span>
+            <span class="detect-value">[3.48/ 4.00]</span>
+          </div>
+          <div class="detect-row">
+            <span class="detect-label mono">SEMESTER</span>
+            <span class="detect-value">6th</span>
+          </div>
+        </div>
+
+        <p class="subsection-title mono" style="margin-top:56px;">EXPERIENCE</p>
+        <div class="timeline">
+
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content bracket-frame">
+              <span class="corner tl"></span><span class="corner tr"></span>
+              <span class="corner bl"></span><span class="corner br"></span>
+              <p class="timeline-date mono">[sep 2025] · REMOTE</p>
+              <h3 class="timeline-title">Frontend Development Intern</h3>
+              <p class="timeline-org">Code Alpha</p>
+              <p class="timeline-desc">
+                Developed responsive UI components and improved existing pages to make them mobile-friendly.
+                 Converted design mockups into functional web pages and fixed layout bugs to enhance overall UI/UX.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content bracket-frame">
+              <span class="corner tl"></span><span class="corner tr"></span>
+              <span class="corner bl"></span><span class="corner br"></span>
+              <p class="timeline-date mono">[Oct 2025 - Nov 2025] · REMOTE</p>
+              <h3 class="timeline-title">MERN Stack Intern</h3>
+              <p class="timeline-org">Udevs</p>
+              <p class="timeline-desc">
+  Developed and tested RESTful APIs using Express.js and connected them with MongoDB for dynamic data handling. Built and 
+  integrated React components with backend APIs, improving full-stack functionality and application flow.
+   Assisted in debugging and optimizing existing features to enhance performance and user experience.
+            </p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content bracket-frame">
+              <span class="corner tl"></span><span class="corner tr"></span>
+              <span class="corner bl"></span><span class="corner br"></span>
+              <p class="timeline-date mono">[Dec 2024 – June 2025] · ONSITE</p>
+              <h3 class="timeline-title">Full-Stack Development Intern</h3>
+              <p class="timeline-org">AI-Pearlz</p>
+             <p class="timeline-desc">
+  Worked on full-stack client projects by developing both frontend interfaces and backend functionality. Built and maintained
+   web applications using MERN stack technologies, integrated APIs, and handled database operations. 
+   Collaborated with team members to implement new features, fix bugs, and improve overall application performance and 
+   user experience.
+          </p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content bracket-frame">
+              <span class="corner tl"></span><span class="corner tr"></span>
+              <span class="corner bl"></span><span class="corner br"></span>
+                <p class="timeline-date mono">[Dec 2025 – Jan 2026] · ONSITE</p>
+                <h3 class="timeline-title">Laravel Framework Intern</h3>
+                <p class="timeline-org">Algogenius Technologies</p>
+                <p class="timeline-desc">
+  Developed and maintained Laravel-based modules, working with Eloquent ORM for database operations and Blade
+   templates for dynamic UI rendering. Fixed bugs in existing codebase, improved application performance, and
+    assisted in building new features for client projects following MVC architecture.
+</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT-->
+    <section class="section" id="contact">
+      <div class="container">
+        <p class="section-tag mono">CONTACT</p>
+        <h2 class="section-title">Let's Talk</h2>
+        <p class="section-sub">
+          Looking to hire for an internship, collaborate, or just say hi — my inbox is open.
+        </p>
+
+        <div class="contact-grid">
+
+          <div class="contact-info" data-reveal>
+            <div class="contact-row">
+              <span class="contact-label mono">EMAIL</span>
+              <a href="mailto:noorfatima52469@gmail.com" class="contact-value">noorfatima52469@gmail.com</a>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label mono">LOCATION</span>
+              <span class="contact-value">Lahore, Pakistan</span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label mono">LINKEDIN</span>
+              <a href="https://www.linkedin.com/in/noor-fatima-822b022b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+              class="contact-value">linkedin.com/in/noor-fatima</a>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label mono">GITHUB</span>
+              <a href="https://github.com/noorfatima52469" class="contact-value">github.com/noorfatima52469</a>
+            </div>
+          </div>
+
+          <form class="contact-form bracket-frame" id="contactForm" data-reveal novalidate>
+            <span class="corner tl"></span><span class="corner tr"></span>
+            <span class="corner bl"></span><span class="corner br"></span>
+
+            <div class="form-group">
+              <label for="name" class="mono">NAME</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+              <p class="form-error" data-error-for="name"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="mono">EMAIL</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <p class="form-error" data-error-for="email"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="mono">MESSAGE</label>
+              <textarea id="message" name="message" rows="4" placeholder="What's on your mind?" required></textarea>
+              <p class="form-error" data-error-for="message"></p>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">
+              <span class="btn-text">Send Message</span>
+            </button>
+
+            <p class="form-success" id="formSuccess">Message captured — I'll get back to you soon.</p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="mono">[NOOR] © 2026 — Built with HTML, CSS &amp; JavaScript.</p>
+      <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
